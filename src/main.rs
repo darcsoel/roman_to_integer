@@ -60,27 +60,21 @@ mod tests {
 
     #[test]
     fn check_roman_x() {
-        let mut roman_number = String::new();
-        roman_number.push_str("X");
-
+        let roman_number = String::from("X");
         let result = convert(&roman_number);
         assert_eq!(result, 10);
     }
 
     #[test]
     fn check_roman_ix() {
-        let mut roman_number = String::new();
-        roman_number.push_str("IX");
-
+        let roman_number = String::from("IX");
         let result = convert(&roman_number);
         assert_eq!(result, 9);
     }
 
     #[test]
     fn check_roman_lviii() {
-        let mut roman_number = String::new();
-        roman_number.push_str("LVIII");
-
+        let roman_number = String::from("LVIII");
         let result = convert(&roman_number);
         assert_eq!(result, 58);
     }
@@ -96,18 +90,14 @@ mod tests {
 
     #[test]
     fn check_roman_xxvii() {
-        let mut roman_number = String::new();
-        roman_number.push_str("XXVII");
-
+        let roman_number = String::from("XXVII");
         let result = convert(&roman_number);
         assert_eq!(result, 27);
     }
 
     #[test]
     fn check_roman_mcmxciv() {
-        let mut roman_number = String::new();
-        roman_number.push_str("MCMXCIV");
-
+        let roman_number = String::from("MCMXCIV");
         let result = convert(&roman_number);
         assert_eq!(result, 1994);
     }
